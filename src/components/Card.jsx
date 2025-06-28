@@ -57,7 +57,7 @@ const Card = ({ note }) => {
                         setCreate(true);
                     }}
                 >
-                    Edit
+                    Open
                 </button>
                 <button
                     style={{

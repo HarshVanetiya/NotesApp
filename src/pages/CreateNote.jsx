@@ -155,7 +155,7 @@ const CreateNote = ({ title, body, mode, setCreate, setNotes, id }) => {
                         }}
                         onClick={handelSave}
                     >
-                        Save
+                        {mode === "edit" ? "Edit" : "Save"}
                     </button>
                 </div>
             </form>
