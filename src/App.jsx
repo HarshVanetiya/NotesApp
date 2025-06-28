@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { ContextProvider } from "../../ExpenseTracker/src/context/ContextStore";
 import NotesDashboard from "./pages/NotesDashboard";
 import CreateNote from "./pages/CreateNote";
 import Loader from "./pages/Loader";
+import { ContextProvider } from "./context/ContextStore";
 
 const App = () => {
     const [create, setCreate] = useState(false);
