@@ -1,5 +1,5 @@
 import React from "react";
-import { useContextStore } from "../../../ExpenseTracker/src/context/ContextStore";
+import { useContextStore } from "../context/ContextStore";
 
 const NotesHeader = () => {
     const {

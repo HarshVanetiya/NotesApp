@@ -1,6 +1,6 @@
 import React from "react";
-import { useContextStore } from "../../../ExpenseTracker/src/context/ContextStore";
 import Card from "./Card";
+import { useContextStore } from "../context/ContextStore";
 
 const AllNotes = () => {
     const {
