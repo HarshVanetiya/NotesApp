@@ -72,7 +72,7 @@ const NoNotes = () => {
                                 cursor: "pointer",
                                 borderRadius: "10px",
                                 color: "#7ee6fa",
-                                background: "#3a7e8c",
+                                background: "rgba(255,255,255,0.02)",
                                 fontWeight: 700,
                                 boxShadow: "0 2px 12px rgba(0,0,0,0.08)",
                                 transition: "background 0.2s, transform 0.2s",
@@ -82,7 +82,8 @@ const NoNotes = () => {
                                 (e.currentTarget.style.background = "#2e5e6b")
                             }
                             onMouseOut={(e) =>
-                                (e.currentTarget.style.background = "#3a7e8c")
+                                (e.currentTarget.style.background =
+                                    "rgba(255,255,255,0.02)")
                             }
                             onClick={() => {
                                 setCreateId(notes.length);

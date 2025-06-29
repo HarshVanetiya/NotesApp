@@ -11,15 +11,6 @@ const NotesHeader = () => {
         setCreateId,
     } = useContextStore();
 
-    const btn = {
-        border: "none",
-        padding: "12px",
-        fontSize: "1.1rem",
-        cursor: "pointer",
-        borderRadius: "5px",
-        color: "#ffffff",
-        background: "#292929",
-    };
     return (
         <>
             <div
@@ -29,7 +20,7 @@ const NotesHeader = () => {
                     justifyContent: "space-between",
                     padding: "1.5vh 4vw",
                     background:
-                        "linear-gradient(90deg, #202020 60%, #353535 100%)",
+                        "linear-gradient(90deg, #202020 60%,rgb(40, 45, 48) 100%)",
                     boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
                     minHeight: "10vh", // 70px is roughly 10vh on most screens
                 }}
@@ -51,7 +42,7 @@ const NotesHeader = () => {
                         gap: "16px",
                     }}
                 >
-                    <button
+                    {/* <button
                         style={{
                             ...btn,
                             transition: "background 0.2s, transform 0.2s",
@@ -64,12 +55,20 @@ const NotesHeader = () => {
                         }
                     >
                         Mode
-                    </button>
+                    </button> */}
                     <button
                         style={{
-                            ...btn,
-                            background: "#444",
+                            border: "none",
+                            padding: "12px",
+                            fontSize: "1.1rem",
+                            cursor: "pointer",
+                            borderRadius: "10px",
+                            color: "#ffffff",
+                            background: "rgba(255,255,255,0.02)",
+                            fontWeight: 700,
+                            boxShadow: "0 2px 12px rgba(0,0,0,0.08)",
                             transition: "background 0.2s, transform 0.2s",
+                            outline: "none",
                         }}
                         onMouseOver={(e) =>
                             (e.currentTarget.style.background = "#222")

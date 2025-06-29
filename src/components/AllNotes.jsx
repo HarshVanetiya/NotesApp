@@ -14,12 +14,12 @@ const AllNotes = () => {
     return (
         <>
             <div
+                className="notes-grid-responsive"
                 style={{
                     display: "grid",
-                    gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
                     gap: "32px",
                     padding: "32px",
-                    maxWidth: "900px",
+                    maxWidth: "1000px",
                     margin: "0 auto",
                 }}
             >
@@ -28,20 +28,11 @@ const AllNotes = () => {
                         key={note.id}
                         style={{
                             minHeight: "20vh",
-                            background: "#23272f",
+                            background: "rgb(32,32,32)",
                             borderRadius: "12px",
-                            boxShadow: "0 2px 12px rgba(0,0,0,0.08)",
-                            color: "#3b82f6",
+                            boxShadow: "0 4px 16px 0 rgba(0,0,0,0.18)",
+                            color: "#e5e7eb",
                             padding: "10px 31px",
-                        }}
-                        onMouseOver={(e) => {
-                            e.currentTarget.style.background =
-                                "linear-gradient(45deg, #3b82f6 0%, #22d3ee 60%,rgb(1, 172, 199) 100%)";
-                            e.currentTarget.style.color = "black";
-                        }}
-                        onMouseOut={(e) => {
-                            e.currentTarget.style.background = "#23272f";
-                            e.currentTarget.style.color = "#3b82f6";
                         }}
                     >
                         <Card note={note} />

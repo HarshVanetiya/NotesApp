@@ -26,19 +26,50 @@ const Card = ({ note }) => {
     } = useContextStore();
 
     return (
-        <div>
-            <h3
-                style={{
-                    marginBottom: "54px",
-                    fontSize: "1.6rem",
-                }}
-            >
-                {note.title}
-            </h3>
+        <div
+            style={{
+                display: "flex",
+                flexDirection: "column",
+                minHeight: "160px",
+                maxHeight: "190px",
+                overflow: "visible",
+                justifyContent: "space-between",
+            }}
+        >
+            <div>
+                <h3
+                    style={{
+                        marginBottom: "1.1rem",
+                        fontSize: "1.15rem",
+                        fontWeight: 700,
+                        color: "#fff",
+                        letterSpacing: "0.5px",
+                        lineHeight: 1.3,
+                        wordBreak: "break-word",
+                    }}
+                >
+                    {note.title}
+                </h3>
+                <div
+                    style={{
+                        color: "#cbd5e1",
+                        fontSize: "1.01rem",
+                        lineHeight: 1.5,
+                        wordBreak: "break-word",
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                        maxHeight: "50px",
+                        marginBottom: "0.5rem",
+                    }}
+                >
+                    {note.body}
+                </div>
+            </div>
             <div
                 style={{
                     display: "flex",
                     gap: "8px",
+                    marginTop: "1.2rem",
                 }}
             >
                 <button
